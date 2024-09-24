@@ -88,3 +88,18 @@ class Index extends React.Component{
 
 
 export default Index
+
+
+/** 总结
+1、所有的jsx元素节点最终都会被babel编译成
+    React.createElement(
+    type,
+    [props],
+    [...children]
+    )
+    的形式
+2、代码被createElement 处理后会转变成转换成 react element 对象
+类似vue的element对象，包含tag节点，children，props等
+3、得到element对象后，进行调和，将每个节点对应不同的fiber对象（文本组件，函数组件的等）
+
+*/
